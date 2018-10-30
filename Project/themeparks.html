@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style media="screen">
+  h1 {
+      text-shadow: 3px 2px red;
+      font-size: 5vw;
+      font-weight: 900;
+      text-decoration: underline;
+  }
+
+    h2{
+    text-shadow: 4px 2px pink;
+
+    text-decoration-line: underline;
+  }
+  h3{
+    text-shadow: 3px 2px blue;
+    font-size: 2vw;
+    font-weight: 450;
+    text-decoration: underline;
+  }
+  body{
+    background-color: lightblue;
+    margin:0;
+  }
+* {
+    box-sizing: border-box;
+    border-color: black;
+    border-width: medium;
+
+}
+.column {
+    float: left;
+    padding: 10px;
+}
+/* Left and right column */
+.column.side {
+    width: 25%;
+    border: 5px;
+}
+/* Middle column */
+.column.middle {
+    width: 75%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+
+.center {
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+
+div.gallery {
+    margin: 5px;
+    border: 5px solid white;
+    float: left;
+    width: 160px;
+}
+
+div.gallery:hover {
+    border: 5px solid blue;
+}
+
+div.gallery img {
+    width: 150px;
+    height: 150px;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+  </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <div class="jumbotron">
+    <center><big><b><h1>THEME PARKS</h1> </b></big></center>
+    <center><big><b><h2><marquee>Things to do..</marquee> </h2> </b></big></center>
+    </div>
+    <div class="row">
+      <div class="column side">
+        <h2>ABOUT</h2>
+        <hr>
+        <p>Hyderabad has many amusement parks that features various attractions, such as rides and games, as well as other events for entertainment purposes. A theme park is a type of amusement park that bases its structures and attractions around a central theme, often featuring multiple areas with different themes. Unlike temporary and mobile funfairs and carnivals, amusement parks are stationary and built for long-lasting operation.</p>
+<hr>
+        
+               <h2>EXPLORE MORE DESTINATIONS</h2>
+               <hr>
+               <a target="_blank" href="HITEC-City.html">HITEC City</a><br>
+                 <a target="_blank" href="oldcity.html">Old city</a><br>
+                   <a target="_blank" href="restaurants.html">Restaurants</a><br>
+                    <hr>
+                    <br>
+                    <hr>
+                    <h2>GIVE YOUR REVIEWS</h2>
+                    <hr>
+                    <form  id="usrform">
+ <b>Name:</b> <input type="text" name="usrname">
+<br><br>
+<b>Feedback:</b> <textarea rows="4" cols="30" name="comment" form="usrform" placeholder="Enter your comment"></textarea>
+<input type="submit">
+</form>
+                     <hr>
+            </div>
+        <div class="column middle">
+      <center>  <h2 id="religious">PLACES TO VISIT</h2> </center>
+        <hr>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="rfc.jpg" alt="5Terre">
+          </a>
+          <div class="desc">Ramoji Film City</div>
+
+          <center><div class="btn btn-info" id="demo" onclick="myFunction()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">READ MORE</div></center>
+        </div>
+        <script>
+        function myFunction() {
+        document.getElementById("demo").style.color = "red";
+        }
+        </script>
+
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="wonder.jpg" alt="Forest">
+          </a>
+          <div class="desc">Wonderla Amusement Park</div>
+          <center><div class="btn btn-info" id="demo1" onclick="myFunction1()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">READ MORE</div></center>
+        </div>
+        <script>
+        function myFunction1() {
+        document.getElementById("demo1").style.color = "red";
+        }
+        </script>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="Jalavihar.jpg" alt="Northern Lights">
+          </a>
+          <div class="desc">Jalavihar Water Park</div>
+          <center><div class="btn btn-info" id="demo2" onclick="myFunction2()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">READ MORE</div></center>
+        </div>
+        <script>
+        function myFunction2() {
+        document.getElementById("demo2").style.color = "red";
+        }
+        </script>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="snowworld.jpg" alt="Mountains">
+          </a>
+          <div class="desc">Snow World</div>
+          <center><div class="btn btn-info" id="demo3" onclick="myFunction3()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">READ MORE</div></center>
+          </div>
+          <script>
+          function myFunction3() {
+          document.getElementById("demo3").style.color = "red";
+          }
+          </script>
+      </div>
+      <div class="column middle">
+
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="oceanpark.jpg" alt="5Terre">
+  </a>
+  <div class="desc">Ocean Park India</div>
+  <center><div class="btn btn-info" id="demo4" onclick="myFunction4()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction4() {
+document.getElementById("demo4").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="Leo-Splash.jpg" alt="Forest">
+  </a>
+  <div class="desc">Leo Splash</div>
+  <center><div class="btn btn-info" id="demo5" onclick="myFunction5()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+  </div>
+  <script>
+  function myFunction5() {
+  document.getElementById("demo5").style.color = "red";
+  }
+  </script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="mountopera.jpg" alt="Northern Lights">
+  </a>
+  <div class="desc">Mount Opera Multi-Theme Park Resort</div>
+  <center><div class="btn btn-info" id="demo6" onclick="myFunction6()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+  </div>
+  <script>
+  function myFunction6() {
+  document.getElementById("demo6").style.color = "red";
+  }
+  </script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="escape.jpg" alt="Mountains">
+  </a>
+  <div class="desc">Escape Water Park</div>
+  <center><div class="btn btn-info" id="demo7" onclick="myFunction7()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction7() {
+document.getElementById("demo7").style.color = "red";
+}
+</script>
+</div>
+<script>
+function myFunction15() {
+document.getElementById("demo15").style.color = "red";
+}
+</script>
+</div>
+</div>
+    </div>
+
+  </body>
+
+    <!-- footer start here -->
+    <section class="footer-agile" style="background-color:lightgray;">
+    	<div class="container-fluid">
+    		<div class="footer-btm-agileinfo">
+    			<div class="col-md-3 col-xs-12 footer-grid w3social">
+    				<h3>About us</h3>
+    				<p class="footer-p1">  Explore your dream destinations with us. Here we are giving you the complete
+              overview of your favourite places in Hyderabad. You can give your reviews about the places
+              of your interest. </p>
+    				<a href="pro1page.html#about">Read More <span class="fa fa-long-arrow-right"></span></a>
+    			</div>
+    			<div class="col-md-3 col-xs-12 footer-grid">
+    				<h3>Contact Info</h3>
+    				<ul>
+    					<li><i class="fa fa-phone"></i>9041847726</li>
+    					<li><i class="fa fa-fax"></i>+12 222 333 2365</li>
+    					<li><i class="fa fa-map-marker"></i>Hyderabad</li>
+    					<li><i class="fa fa-envelope-o"></i><a href="#">suryamandy@gmail.com</a></li>
+    					<li><i class="fa fa-globe"></i><a href="#">www.uncoverhyderabad.com</a></li>
+    				</ul>
+    			</div>
+    			<div class="col-md-2 col-xs-12 footer-grid w3social">
+    				<h3>Quick Links</h3>
+    				<ul>
+    					<li><a href="pro1page.html">Home</a></li>
+    					<li><a href="pro1page.html#about" class="scroll">About us</a></li>
+    					<li><a href="pro1page.html#mostly" class="scroll">Mostly Viewed</a></li>
+    					<li><a href="Register.html" class="scroll">Register</a></li>
+    				</ul>
+    			</div>
+    			<div class="col-md-4 col-xs-12 footer-grid">
+    				<h3>Latest Tweets</h3>
+    				<ul class="tweet-agile">
+    				<li>
+    					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+    					<p class="tweet-p1"><a href="mailto:support@company.com">@tweetyTalker</a> Easy to discover the places.</p>
+    					<p class="tweet-p2">Posted 3 days ago.</p>
+    				</li>
+    				<li>
+    					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+    					<p class="tweet-p1"><a href="mailto:support@company.com">@sunnySood</a> User friendly interface.</p>
+    					<p class="tweet-p2">Posted 3 days ago.</p>
+    				</li>
+    			</ul>
+    			</div>
+    			<div class="clearfix"> </div>
+    		</div>
+    		<div class="footer-agilem">
+    			<div class="col-sm-8 col-xs-9 copy-w3lsright">
+    				<p>© 2018 Discover. All rights reserved </a></p>
+    			</div>
+
+    			<div class="col-sm-4 col-xs-6 social-w3licon" style="float:right" style="fontSize:2vw;">
+    				<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+    				<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+    				<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+    				<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
+    			</div>
+
+    			<div class="clearfix"></div>
+    		</div>
+    	</div>
+    </section>
+</html>
